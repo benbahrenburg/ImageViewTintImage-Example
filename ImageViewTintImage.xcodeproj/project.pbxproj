@@ -12,6 +12,7 @@
 		CAB8344A1B6559EF009C7583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB834481B6559EF009C7583 /* Main.storyboard */; };
 		CAB8344C1B6559EF009C7583 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAB8344B1B6559EF009C7583 /* Assets.xcassets */; };
 		CAB8344F1B6559EF009C7583 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAB8344D1B6559EF009C7583 /* LaunchScreen.storyboard */; };
+		CAFBFC761B659CDB002763DB /* UIImageView+ImageTint.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFBFC751B659CDB002763DB /* UIImageView+ImageTint.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		CAB8344B1B6559EF009C7583 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAB8344E1B6559EF009C7583 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAB834501B6559EF009C7583 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAFBFC751B659CDB002763DB /* UIImageView+ImageTint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+ImageTint.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				CAB8344B1B6559EF009C7583 /* Assets.xcassets */,
 				CAB8344D1B6559EF009C7583 /* LaunchScreen.storyboard */,
 				CAB834501B6559EF009C7583 /* Info.plist */,
+				CAFBFC751B659CDB002763DB /* UIImageView+ImageTint.swift */,
 			);
 			path = ImageViewTintImage;
 			sourceTree = "<group>";
@@ -136,6 +139,7 @@
 			files = (
 				CAB834471B6559EF009C7583 /* ViewController.swift in Sources */,
 				CAB834451B6559EF009C7583 /* AppDelegate.swift in Sources */,
+				CAFBFC761B659CDB002763DB /* UIImageView+ImageTint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				CAB834551B6559EF009C7583 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

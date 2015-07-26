@@ -10,21 +10,23 @@ import UIKit
 
 class ViewController: UIViewController,UIGestureRecognizerDelegate {
 
-    var starOneOn = false
-    @IBOutlet weak var starOneImgView: UIImageView!
+    let defaultColor = UIColor.lightGrayColor()
+    let selectedColor = UIColor.blueColor()
     
+    var starOneOn = false
     var starTwoOn = false
+    
+    @IBOutlet weak var starOneImgView: UIImageView!
     @IBOutlet weak var starTwoImgView: UIImageView!
-
 
     func setDefaultStyle(view : UIImageView) {
         view.image = view.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        view.tintColor = UIColor.lightGrayColor()
+        view.tintColor = defaultColor
     }
     
     func setSelectedStyle(view : UIImageView) {
         view.image = view.image!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
-        view.tintColor = UIColor.blueColor()
+        view.tintColor = selectedColor
     }
     
     func addHandlers() {
@@ -41,7 +43,8 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
         super.viewDidLoad()
 
         addHandlers()
-        setDefaultStyle(starOneImgView)
+        
+        starOneImgView.tintImageColor(defaultColor)
         setDefaultStyle(starTwoImgView)
         
     }
@@ -53,7 +56,7 @@ class ViewController: UIViewController,UIGestureRecognizerDelegate {
 
 
     func starOneTapHandler(sender: UITapGestureRecognizer? = nil) {
-        (starOneOn) ? setDefaultStyle(starOneImgView) : setSelectedStyle(starOneImgView)
+        (starOneOn) ? starOneImgView.tintImageColor(defaultColor) : starOneImgView.tintImageColor(selectedColor)
         starOneOn = !starOneOn
     }
 
